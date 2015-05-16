@@ -1,0 +1,9 @@
+---
+# This playbook used to setup OpenStack to use the Multi-Tenant Isolation features. 
+
+- hosts: util_container
+  user: root
+  remote_user: root
+  sudo: yes
+  roles:
+    - tenant-isolation
